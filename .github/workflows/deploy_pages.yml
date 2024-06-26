@@ -72,7 +72,7 @@ jobs:
           latex-bin
           mathastext
           microtype
-          ms
+          texlive-ms
           physics
           preview
           ragged2e
