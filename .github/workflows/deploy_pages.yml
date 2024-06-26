@@ -72,7 +72,10 @@ jobs:
           latex-bin
           mathastext
           microtype
-          texlive-ms
+          count1to
+          multitoc
+          prelim2e
+          ragged2e
           physics
           preview
           ragged2e
