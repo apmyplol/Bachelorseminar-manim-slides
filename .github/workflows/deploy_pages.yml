@@ -17,9 +17,9 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  FILE: 'slides.py'  # Source file where scenes are defined
+  FILE: '0_1_intro.py 0_inhalt.py 1_prox_struct.py 2_1_exp_metrik.py 2_2_lpNorm.py 2_4_pexp_fam.py 2_metric_add_segments.py 3_1_add_diff_ps.py 3_2_1_lp_Defbereiche.py 4_quellen.py'  # Source file where scenes are defined
   MANIM: 'manim'  # manim or manimgl - which Manim renderer to use
-  SCENES: 'Introduction WithTeX Outro'  # Space-separated list of scenes to render
+  SCENES: 'Intro Inhalt Inhalt012 FactorialProximityStructure Inhalt2345 AddSegments LpSegAdditive pexp_Bsp expMIsoCurves pexpMetrik RecapInhalt567 HinrNotwBeds Inhalt78 lp_Defbereiche Quellen'  # Space-separated list of scenes to render
   USES_TEX: true  # true or false - disabling this will make the action run faster
   DISPLAY: :99  # Do not touch this
 
@@ -93,7 +93,7 @@ jobs:
     - name: Build HTML
       run: |
         ${{ env.MANIM }} ${{ env.FILE }} ${{ env.SCENES }}
-        manim-slides convert ${{ env.SCENES }} _site/index.html
+        manim-slides convert -c progress=true ${{ env.SCENES }} _site/index.html
 
     - name: Push to gh-pages branch
       if: github.event_name != 'pull_request'
