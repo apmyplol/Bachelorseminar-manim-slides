@@ -1,24 +1,24 @@
 from manim import *
 from manim_slides import Slide
 
+
+lp_metr_ind =150+151+1538+465 - 1
+hinr_notw_ind = lp_metr_ind + 384 + 200 + 88 + 168 + 661 + 283 + 1542
+add_diff_ps_ind = hinr_notw_ind + 125 + 409 + 481 + 1214
+seg_add_metric_satz_ind = add_diff_ps_ind + 233 + 157 + 333 + 427 + 415 +105 + 103 + 809
+seg_solv_ind = seg_add_metric_satz_ind + 2334
+add_dif_model_seg_add_metr_ind = seg_solv_ind + 572 + 416 + 1379 + 100
+represent_ind = add_dif_model_seg_add_metr_ind + 1129
+prox_struct_ind = represent_ind + 1006
+intro_ind = prox_struct_ind + 2823
+
+inds = [intro_ind, prox_struct_ind, represent_ind, add_dif_model_seg_add_metr_ind, seg_solv_ind, seg_add_metric_satz_ind, add_diff_ps_ind, hinr_notw_ind, lp_metr_ind, 0]
+
 class RecapInhalt567(MovingCameraScene, Slide):
     def construct(self):
         # Load the SVG file
         self.camera.frame.save_state()
         svg_file = SVGMobject("2_inhalt.svg", use_svg_cache=False, height=7)
-
-        lp_metr_ind =150+151+1538+465 - 1
-        hinr_notw_ind = lp_metr_ind + 384 + 200 + 88 + 168 + 661 + 283 + 1542
-        add_diff_ps_ind = hinr_notw_ind + 125 + 409 + 481 + 1214
-        seg_add_metric_satz_ind = add_diff_ps_ind + 233 + 157 + 333 + 427 + 415 +105 + 103 + 809
-        seg_solv_ind = seg_add_metric_satz_ind + 2334
-        add_dif_model_seg_add_metr_ind = seg_solv_ind + 572 + 416 + 1379 + 100
-        represent_ind = add_dif_model_seg_add_metr_ind + 1129
-        prox_struct_ind = represent_ind + 1006
-        intro_ind = prox_struct_ind + 2823
-
-        inds = [intro_ind, prox_struct_ind, represent_ind, add_dif_model_seg_add_metr_ind, seg_solv_ind, seg_add_metric_satz_ind, add_diff_ps_ind, hinr_notw_ind, lp_metr_ind, 0]
-
         parts = [svg_file[inds[i+1] : inds[i]] for i in range(len(inds)-1)]
 
         self.play(FadeIn(VGroup(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5])))
@@ -90,18 +90,6 @@ class Inhalt(Slide):
     def construct(self):
         svg_file = SVGMobject("2_inhalt.svg", use_svg_cache=False, height=7)
 
-        lp_metr_ind =150+151+1538+465 - 1
-        hinr_notw_ind = lp_metr_ind + 384 + 200 + 88 + 168 + 661 + 283 + 1542
-        add_diff_ps_ind = hinr_notw_ind + 125 + 409 + 481 + 1214
-        seg_add_metric_satz_ind = add_diff_ps_ind + 233 + 157 + 333 + 427 + 415 +105 + 103 + 809
-        seg_solv_ind = seg_add_metric_satz_ind + 2334
-        add_dif_model_seg_add_metr_ind = seg_solv_ind + 572 + 416 + 1379 + 100
-        represent_ind = add_dif_model_seg_add_metr_ind + 1129
-        prox_struct_ind = represent_ind + 1006
-        intro_ind = prox_struct_ind + 2823
-
-        inds = [intro_ind, prox_struct_ind, represent_ind, add_dif_model_seg_add_metr_ind, seg_solv_ind, seg_add_metric_satz_ind, add_diff_ps_ind, hinr_notw_ind, lp_metr_ind, 0]
-
         parts = [svg_file[inds[i+1] : inds[i]] for i in range(len(inds)-1)]
         
         for i in range(len(parts)):
@@ -113,19 +101,6 @@ class Inhalt012(Slide):
     def construct(self):
         # Load the SVG file
         svg_file = SVGMobject("2_inhalt.svg", use_svg_cache=False, height=7)
-
-        lp_metr_ind =150+151+1538+465 - 1
-        hinr_notw_ind = lp_metr_ind + 384 + 200 + 88 + 168 + 661 + 283 + 1542
-        add_diff_ps_ind = hinr_notw_ind + 125 + 409 + 481 + 1214
-        seg_add_metric_satz_ind = add_diff_ps_ind + 233 + 157 + 333 + 427 + 415 +105 + 103 + 809
-        seg_solv_ind = seg_add_metric_satz_ind + 2334
-        add_dif_model_seg_add_metr_ind = seg_solv_ind + 572 + 416 + 1379 + 100
-        represent_ind = add_dif_model_seg_add_metr_ind + 1129
-        prox_struct_ind = represent_ind + 1006
-        intro_ind = prox_struct_ind + 2823
-
-        inds = [intro_ind, prox_struct_ind, represent_ind, add_dif_model_seg_add_metr_ind, seg_solv_ind, seg_add_metric_satz_ind, add_diff_ps_ind, hinr_notw_ind, lp_metr_ind, 0]
-
         parts = [svg_file[inds[i+1] : inds[i]] for i in range(len(inds)-1)]
 
         self.play(FadeIn(VGroup(parts[0])))
@@ -140,18 +115,6 @@ class Inhalt2345(Slide):
         # Load the SVG file
         svg_file = SVGMobject("2_inhalt.svg", use_svg_cache=False, height=7)
 
-        lp_metr_ind =150+151+1538+465 - 1
-        hinr_notw_ind = lp_metr_ind + 384 + 200 + 88 + 168 + 661 + 283 + 1542
-        add_diff_ps_ind = hinr_notw_ind + 125 + 409 + 481 + 1214
-        seg_add_metric_satz_ind = add_diff_ps_ind + 233 + 157 + 333 + 427 + 415 +105 + 103 + 809
-        seg_solv_ind = seg_add_metric_satz_ind + 2334
-        add_dif_model_seg_add_metr_ind = seg_solv_ind + 572 + 416 + 1379 + 100
-        represent_ind = add_dif_model_seg_add_metr_ind + 1129
-        prox_struct_ind = represent_ind + 1006
-        intro_ind = prox_struct_ind + 2823
-
-        inds = [intro_ind, prox_struct_ind, represent_ind, add_dif_model_seg_add_metr_ind, seg_solv_ind, seg_add_metric_satz_ind, add_diff_ps_ind, hinr_notw_ind, lp_metr_ind, 0]
-
         parts = [svg_file[inds[i+1] : inds[i]] for i in range(len(inds)-1)]
 
         self.play(FadeIn(VGroup(parts[0], parts[1], parts[2])))
@@ -163,23 +126,21 @@ class Inhalt567(Slide):
     def construct(self):
         # Load the SVG file
         svg_file = SVGMobject("2_inhalt.svg", use_svg_cache=False, height=7)
-
-        lp_metr_ind =150+151+1538+465 - 1
-        hinr_notw_ind = lp_metr_ind + 384 + 200 + 88 + 168 + 661 + 283 + 1542
-        add_diff_ps_ind = hinr_notw_ind + 125 + 409 + 481 + 1214
-        seg_add_metric_satz_ind = add_diff_ps_ind + 233 + 157 + 333 + 427 + 415 +105 + 103 + 809
-        seg_solv_ind = seg_add_metric_satz_ind + 2334
-        add_dif_model_seg_add_metr_ind = seg_solv_ind + 572 + 416 + 1379 + 100
-        represent_ind = add_dif_model_seg_add_metr_ind + 1129
-        prox_struct_ind = represent_ind + 1006
-        intro_ind = prox_struct_ind + 2823
-
-        inds = [intro_ind, prox_struct_ind, represent_ind, add_dif_model_seg_add_metr_ind, seg_solv_ind, seg_add_metric_satz_ind, add_diff_ps_ind, hinr_notw_ind, lp_metr_ind, 0]
-
         parts = [svg_file[inds[i+1] : inds[i]] for i in range(len(inds)-1)]
 
         self.play(FadeIn(VGroup(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5])))
         self.next_slide()
         self.play(FadeIn(VGroup(parts[6], parts[7])))
+        self.next_slide()
+
+class Inhalt78(Slide):
+    def construct(self):
+        # Load the SVG file
+        svg_file = SVGMobject("2_inhalt.svg", use_svg_cache=False, height=7)
+
+
+        self.play(FadeIn(VGroup(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7])))
+        self.next_slide()
+        self.play(FadeIn(parts[8]))
         self.next_slide()
 
