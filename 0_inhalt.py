@@ -137,7 +137,7 @@ class Inhalt78(Slide):
     def construct(self):
         # Load the SVG file
         svg_file = SVGMobject("2_inhalt.svg", use_svg_cache=False, height=7)
-
+        parts = [svg_file[inds[i+1] : inds[i]] for i in range(len(inds)-1)]
 
         self.play(FadeIn(VGroup(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7])))
         self.next_slide()
