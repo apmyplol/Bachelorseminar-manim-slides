@@ -104,48 +104,48 @@ class pexp_Bsp(Slide):
 
 
 
-class expMIsoCurves(Slide):
-    def construct(self):
-
-        Tex.set_default(font_size = 30)
-        center = Dot([0, 0, 0], color=PINK)
-        
-        rad1 = ImplicitFunction(
-            lambda x, y: exp_metr([x,y], [0, 0]) - 1,
-            color=YELLOW
-        )
-
-        self.play(Write(NumberPlane()), Write(center), Write(rad1))
-        self.next_slide()
-
-        # r1lab = MathTex("r = 1").next_to(rad1, DOWN)
-
-        rad3 = ImplicitFunction(
-            lambda x, y: exp_metr([x,y], [0, 0]) - 3,
-            color=YELLOW
-        )
-
-        # r3lab = MathTex("r = 3").next_to(rad3, UP)
-
-        self.add(rad3)
-        self.next_slide()
-
-
-        p_1 = Dot([0, 1, 0])
-        p_2 = Dot([0, 3, 0])
-        
-
-        brace = BraceBetweenPoints([0, 1, 0], [0, 3, 0])
-        brace_label = brace.get_tex(exp_metr(p_1.get_center(), p_2.get_center()))
-
-        self.add(p_1, p_2, brace, brace_label)
-
-        p_3 = Dot(rad1.get_all_points()[500], color=BLUE)
-
-        rad2 = ImplicitFunction(
-            lambda x, y: exp_metr([x,y], p_3.get_center()) - 2,
-            color=BLUE
-        )
-
-
-        self.add(rad2, p_3)
+# class expMIsoCurves(Slide):
+#     def construct(self):
+#
+#         Tex.set_default(font_size = 30)
+#         center = Dot([0, 0, 0], color=PINK)
+#         
+#         rad1 = ImplicitFunction(
+#             lambda x, y: exp_metr([x,y], [0, 0]) - 1,
+#             color=YELLOW
+#         )
+#
+#         self.play(Write(NumberPlane()), Write(center), Write(rad1))
+#         self.next_slide()
+#
+#         # r1lab = MathTex("r = 1").next_to(rad1, DOWN)
+#
+#         rad3 = ImplicitFunction(
+#             lambda x, y: exp_metr([x,y], [0, 0]) - 3,
+#             color=YELLOW
+#         )
+#
+#         # r3lab = MathTex("r = 3").next_to(rad3, UP)
+#
+#         self.add(rad3)
+#         self.next_slide()
+#
+#
+#         p_1 = Dot([0, 1, 0])
+#         p_2 = Dot([0, 3, 0])
+#         
+#
+#         brace = BraceBetweenPoints([0, 1, 0], [0, 3, 0])
+#         brace_label = brace.get_tex(exp_metr(p_1.get_center(), p_2.get_center()))
+#
+#         self.add(p_1, p_2, brace, brace_label)
+#
+#         p_3 = Dot(rad1.get_all_points()[500], color=BLUE)
+#
+#         rad2 = ImplicitFunction(
+#             lambda x, y: exp_metr([x,y], p_3.get_center()) - 2,
+#             color=BLUE
+#         )
+#
+#
+#         self.add(rad2, p_3)

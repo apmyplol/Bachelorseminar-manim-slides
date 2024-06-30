@@ -105,6 +105,7 @@ jobs:
         ${{ env.MANIM }} 3_1_add_diff_ps.py HinrNotwBeds
         ${{ env.MANIM }} 3_2_1_lp_Defbereiche.py lp_Defbereiche
         ${{ env.MANIM }} 4_quellen.py Quellen
+        ${{ env.MANIM }} vortrag_einheitskreis.py pexp_Bsp
         manim-slides convert -c progress=true ${{ env.SCENES }} _site/index.html
 
     - name: Push to gh-pages branch
