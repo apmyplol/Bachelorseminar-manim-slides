@@ -1,2 +1,2 @@
-manim_slides=5.1.7
-manim=0.18.1
+manim_slides==5.1.7
+manim==0.18.1
